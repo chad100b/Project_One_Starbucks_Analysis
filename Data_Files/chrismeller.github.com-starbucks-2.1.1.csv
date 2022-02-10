@@ -1,0 +1,98 @@
+Declare,metatab-latest
+Title,Starbucks Locations
+Description,"A list of Starbucks locations, scraped from the web in 2017"
+Identifier,0550a135-305f-40ff-b689-d3ab44f5ce06
+Name,chrismeller.github.com-starbucks-2.1.1
+Dataset,starbucks
+Origin,chrismeller.github.com
+Time,
+Space,
+Grain,
+Variant,
+Version,2.1.1
+Version.Major,2
+Version.Minor,1
+Version.Patch,1
+Created,2021-02-23T15:57:42
+Modified,2021-04-02T14:52:09
+Issued,2021-04-02T14:52:09
+Giturl,https://github.com/metatab-packages/chrismeller.github.com-starbucks.git
+""
+Section,Contacts,Email,Organization,Url
+Wrangler,Eric Busboom,eric@civicknowledge.com,Civic Knowledge,http://civicknowledge.com
+""
+Section,Documentation,Title,Description,
+Documentation,http://s3.amazonaws.com/radius.civicknowledge.com/chrismeller.github.com-starbucks-2.1.1/README.md,README,,
+Homepage,https://github.com/chrismeller/StarbucksLocations,Source,Github page for the datafile source,
+Note,Version 2.1.1 updates the geocoding with full-precision lat/lon,,,
+Documentation,http://s3.amazonaws.com/radius.civicknowledge.com/chrismeller.github.com-starbucks-2.1.1/index.html,Documentation Page,,
+""
+Section,References,Name,Description,
+Reference,censusgeo://2019/5/US/state,states,US States,
+Reference,data/geocodes.csv,geocodes,geocoded addresses,
+""
+Section,Resources,Name,Description,
+Datafile,http://s3.amazonaws.com/radius.civicknowledge.com/chrismeller.github.com-starbucks-2.1.1/data/all_starbucks.csv,all_starbucks,List of Starbucks locations.,
+Datafile.S3Url,s3://radius.civicknowledge.com/chrismeller.github.com-starbucks-2.1.1/data/all_starbucks.csv
+Datafile,http://s3.amazonaws.com/radius.civicknowledge.com/chrismeller.github.com-starbucks-2.1.1/data/us_starbucks.csv,us_starbucks,Geo file of starbucks in the US,
+Datafile.S3Url,s3://radius.civicknowledge.com/chrismeller.github.com-starbucks-2.1.1/data/us_starbucks.csv
+""
+Section,Schema,DataType,Description,Has_Codes
+Table,all_starbucks,,,
+Table.Column,id,string,,
+Table.Column,starbucksid,integer,,
+Table.Column,name,text,,
+Table.Column,brandname,string,,
+Table.Column,storenumber,string,,
+Table.Column,phonenumber,string,,
+Table.Column,ownershiptype,string,,
+Table.Column,street1,text,,
+Table.Column,street2,text,,
+Table.Column,street3,text,,
+Table.Column,city,text,,
+Table.Column,countrysubdivisioncode,string,,
+Table.Column,countrycode,string,,
+Table.Column,postalcode,string,,
+Table.Column,longitude,number,,
+Table.Column,latitude,number,,
+Table.Column,timezoneoffset,integer,,
+Table.Column,timezoneid,string,,
+Table.Column,timezoneolsonid,string,,
+Table.Column,firstseen,datetime,,
+Table.Column,lastseen,datetime,,
+Table,us_starbucks,,,
+Table.Column,id,string,,
+Table.Column,starbucksid,integer,,
+Table.Column,name,text,,
+Table.Column,brandname,string,,
+Table.Column,storenumber,string,,
+Table.Column,phonenumber,string,,
+Table.Column,ownershiptype,string,,
+Table.Column,street1,string,,
+Table.Column,street2,string,,
+Table.Column,street3,string,,
+Table.Column,city,string,,
+Table.Column,countrysubdivisioncode,string,,
+Table.Column,countrycode,string,,
+Table.Column,postalcode,integer,,T
+Table.Column,source_longitude,number,,
+Table.Column,source_latitude,number,,
+Table.Column,timezoneoffset,integer,,
+Table.Column,timezoneid,string,,
+Table.Column,timezoneolsonid,string,,
+Table.Column,firstseen,datetime,,
+Table.Column,lastseen,datetime,,
+Table.Column,geocoder,string,,
+Table.Column,lat,number,,
+Table.Column,lon,number,,
+Table.Column,geoid,string,,
+Table.Column,geometry,string,,
+""
+Section,Sources,Name,Description,Hash
+Datafilesource,https://github.com/chrismeller/StarbucksLocations/raw/master/stores.csv,all_starbucks,List of Starbucks locations.,86945a454c02d8077b0bd60bfc8c409d
+Datafilesource,file:///Users/eric/proj/code-projects/radius-search/radius-collection/chrismeller.github.com-starbucks/notebooks/convert.ipynb#ussb,us_starbucks,Geo file of starbucks in the US,7e6f9203f92390fcbd0b67a8939ddf2a
+""
+Section,Distributions,Type
+Distribution,http://s3.amazonaws.com/radius.civicknowledge.com/chrismeller.github.com-starbucks-2.1.1/metadata.csv,
+Distribution,s3://radius.civicknowledge.com/chrismeller.github.com-starbucks-2.1.1.csv,
+Distribution,http://s3.amazonaws.com/radius.civicknowledge.com/chrismeller.github.com-starbucks-2.1.1.csv,
